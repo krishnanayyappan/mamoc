@@ -9,7 +9,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .footer {
-            background-color: #a1a1a1;
+            background-color: #fafafa;
             padding: 10px;
             font-size: 12px;
             margin-left: auto;
@@ -17,56 +17,10 @@
             text-align: center;
         }
 
-        /* Social media styling start */
-
-        .socialmedia {
-            text-align: center;
+        .socialmedia img {
+          width: 50px;
+          height: 50px;
         }
-
-        /* Style all font awesome icons */
-        .fa {
-            padding: 10px;
-            font-size: 25px;
-            /*width: auto;*/
-            /*height: auto;*/
-            text-align: center;
-            text-decoration: none;
-            /*border-radius: 50%;*/
-        }
-
-        /* Add a hover effect if you want */
-        .fa:hover {
-            opacity: 0.85;
-        }
-
-        /* Set a specific color for each brand */
-
-        /* Facebook */
-        .fa-facebook {
-            background: #3B5998;
-            color: white;
-            width: 50px;
-        }
-
-        /* Twitter */
-        .fa-twitter {
-            background: #55ACEE;
-            color: white;
-        }
-
-        .fa-instagram {
-            background: #d6249f;
-            background: radial-gradient(circle at 30% 107%,
-                    #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-            color: white;
-        }
-
-        .fa-linkedin {
-            background: #0077FC;
-            color: white;
-        }
-
-        /* Social media styling end */
     </style>
 </head>
 
@@ -74,14 +28,15 @@
     <div class="footer">
         <div class="socialmedia">
             <h2>Follow Us</h2>
+            
             <a href="https://www.facebook.com/HadesRacing/"
-                class="fa fa-facebook" target="_blank"></a>
-            <a href="https://twitter.com" class="fa fa-twitter"
-                target="_blank"></a>
-            <a href="https://instagram.com" class="fa fa-instagram"
-                target="_blank"></a>
-            <a href="https://linkedin.com" class="fa fa-linkedin"
-                target="_blank"></a>
+                target="_blank"><img src="images/socialmedia/facebook.png" /></a>
+            <a href="https://www.twitter.com"
+                target="_blank"><img src="images/socialmedia/twitter.png" /></a>
+            <a href="https://www.instagram.com"
+                target="_blank"><img src="images/socialmedia/instagram.png" /></a>
+            <a href="https://www.linkedin.com/in/naveendevaraj/"
+                target="_blank"><img src="images/socialmedia/linkedin.png" /></a>
         </div>
         <br>
         <p id="copyright">&copy; 2018-2019 All rights reserved</p>

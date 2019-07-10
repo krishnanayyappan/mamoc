@@ -61,7 +61,7 @@
         </div>
         <div class="column" style="text-align: center; font-size: 23px">
             <p>Donate using Paytm...</p>
-            <img src="images/qrcode.png" alt="qrcode" />
+            <a href="acknowledgement.php"><img src="images/qrcode.png" alt="qrcode" /></a>
         </div>
     </div>
 
