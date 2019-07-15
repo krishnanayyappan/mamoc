@@ -33,7 +33,7 @@
 
 <body>
     <?php include 'topnav.php';?>
-
+    <br>
     <p id="middle">Thank you for believing in MaMoC. We take great pride in our mission and accomplishments and would like to express our gratitude.</p>
     <br><br>
     <p id="clickhere">Click <a href="home.php">here</a> to return to home page</p>

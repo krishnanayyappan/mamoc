@@ -10,6 +10,7 @@
         * {
             /*font-family: "Calibri", sans-serif;*/
             box-sizing: border-box;
+            margin: 0px;
         }
 
         #companyName {
@@ -35,20 +36,23 @@
         /* CSS code for topnav - Start */
         ul {
             list-style-type: none;
-            margin: 0;
             overflow: hidden;
             background-color: #ff7200;
             text-transform: uppercase;
-            height: 50px;
+            height: 38px;
             font-family: "Calibri", sans-serif;
+            position: relative;
+            margin: 0;
         }
 
         a::first-letter {
-            font-size: 120%;
+            /*font-size: 120%;*/
         }
 
         li {
-            float: left;
+            float: right;
+            height: inherit;
+            align-content: center;
         }
 
         li a,
@@ -107,37 +111,19 @@
             float: right;
             /*padding-left: 25px;
             padding-top: 15px;*/
-            padding: 14px;
+            padding: 11px;
         }
-
         /* CSS for topnav - Ends */
     </style>
 </head>
-
 <body>
-    <div class="logo">
-        <a href="home.php">
-            <img src="images/logos/MMC_Logo_Razor.jpg" alt="Logo"
-                style="width: 15%; height: 15%;">
-        </a>
-        <p id="companyName"><span id="Abbreviation">Ma</span>dras <span
-                id="Abbreviation">Mo</span>torcycles <span
-                id="Abbreviation">C</span>ompany</p>
-    </div>
-
+	<div class="topbar">
     <ul>
-        <li><a href="home.php">Home</a></li>
-        <li class="about">
-            <a href="javascript:void(0)" class="aboutBtn">About Us</a>
-            <div class="about-content">
-                <a href="#">Workforce</a>
-                <a href="#">Vision & Mission</a>
-            </div>
-        </li>
-        <li>
-            <a href="countdown.php">Products</a>
-        </li>
-
+        <li class="searchbtn"><input type="text" name="navsearch" id="navsearch"
+                placeholder="Search..."></li>
+        <li class="contact"><a href="contact.php">Contact Us</a></li>
+		<li class="careers"><a href="#">Careers</a></li>
+        <li class="donate"><a href="donate.php">Donate</a></li>
         <li class="services">
             <a href="javascript:void(0)" class="servicesBtn">Services</a>
             <div class="services-content">
@@ -145,13 +131,21 @@
                 <a href="#">Charging<br>Station</a>
             </div>
         </li>
-        <li><a href="donate.php">Donate</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Contact Us</a></li>
-
-        <li class="searchbtn"><input type="text" name="navsearch" id="navsearch"
-                placeholder="Search..."></li>
+        <li class="products">
+            <a href="#">Products</a>
+        </li>
+		<li class="about">
+          <a href="about.php" class="aboutBtn">About Us</a>
+        </li>
+        <li class="home"><a href="home.php">Home</a></li>
+        <li class="logo" style="float: left;">
+        	<a href="home.php">
+        		<img src="images/logos/MMC_Logo_Razor.jpg" alt="Logo" style="width: 30px; height: 30px;" />
+        	</a>
+        </li>
     </ul>
+
+	</div>
 
 </body>
 

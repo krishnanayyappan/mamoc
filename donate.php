@@ -13,6 +13,7 @@
         * {
             /*font-family: "Calibri", sans-serif;*/
             box-sizing: border-box;
+            /*width: 100%;*/
         }
 
         #middle {
@@ -20,16 +21,11 @@
             text-align: center;
             font-weight: bold;
             font-family: Georgia, Times, "Times New Roman", serif;
-            /*font-style: normal;*/
-            /*font-variant: normal;*/
-            /*font-weight: 700;*/
-            /*line-height: 26.4px;*/
         }
 
         .column {
             float: left;
             width: 50%;
-            padding: 10px;
             height: 300px;
             /* Should be removed. Only for demonstration */
             border-right: 2px solid #D3D3D3;
@@ -42,14 +38,18 @@
             display: table;
             clear: both;
         }
+
+        .donate {
+            background-color: red;
+        }
     </style>
 </head>
 
 <body>
     <?php include 'topnav.php';?>
-
+    <br>
     <p id="middle">You can make a Difference!</p>
-
+    <br>
     <div class="donation">
         <div class="column" style="font-size: 23px">
             <p>At MaMoC, we are committed to carbon footprint reduction and

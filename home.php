@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
 
   <style>
 
@@ -20,9 +20,10 @@
       list-style-type: none;
       margin: 0;
       overflow: hidden;
-      text-transform: uppercase;
+      /*text-transform: uppercase ;*/
       height: 50px;
-      font-family: "Calibri", sans-serif;
+      font-family: "Cinzel", sans-serif;
+      font-size: 13px;
     }
 
     a::first-letter {
@@ -92,6 +93,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
+      margin : -0.6%;
     }
 
     .hero-text {
@@ -164,6 +166,10 @@
       height: 120px;
       font-family: 'Acme', sans-serif;
     }
+
+    /*.home {
+            background-color: red;
+    }*/
   </style>
 </head>
 
@@ -174,9 +180,9 @@
     <div class="topnavigation">
       <br>
       <ul>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="donate.php">Donate</a></li>
+        <li class="contact"><a href="contact.php">Contact Us</a></li>
+        <li class="careers"><a href="#">Careers</a></li>
+        <li class="donate"><a href="donate.php">Donate</a></li>
         <li class="services">
           <a href="javascript:void(0)" class="servicesBtn">Services</a>
           <div class="services-content">
@@ -184,13 +190,13 @@
             <a href="#">Charging<br>Station</a>
           </div>
         </li>
-        <li>
+        <li class="products">
           <a href="countdown.php">Products</a>
         </li>
         <li class="about">
           <a href="about.php" class="aboutBtn">About Us</a>
         </li>
-        <li><a href="home.php">Home</a></li>
+        <li class="home"><a href="home.php">Home</a></li>
       </ul>
     </div>
     <div class="hero-text">

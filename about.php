@@ -44,12 +44,26 @@
             text-align: center;
         }
 
+        .people:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
         .tmm_member {
             width:30%;
             left: 50%;
             top: 32%;
+            float: left;
+            margin-left: 13%;
+            margin-top: 70px;
             align-content: center;
-            /*transform: translate(50%, 50%);*/
+            /*display: inline-block;*/
+            transform: skew(-20deg) /*rotate(2deg)*/;
+        }
+
+        .tmm_member::after {
+            clear: both;
         }
 
         .tmm_photo {
@@ -58,7 +72,18 @@
             margin-top:-50px;
             border-radius:40px !important;
             border:5px solid whitesmoke;
+            transform: skew(20deg);
         }
+
+        .tmm_textblock {
+            transform: skew(20deg);
+            padding-left: 50px;
+        }
+
+        .about {
+            background-color: red;
+        }
+
     </style>
 </head>
 
@@ -83,25 +108,14 @@
         <p id="mission" style="font-size: 30px; font-weight: bold; text-transform: uppercase;">Mission</p>
         <p id="mission_statement" style="font-size: 20px;">To attract and attain customers with high-valued products and services and the most satisfying ownership experience.</p>
     </div>
+    <br>
     <hr>
 
     <div class="workforce">
         <p id="wf_title" style="font-size: 30px; text-align: center;font-weight: bold; text-transform: uppercase;">Workforce</p>
         <br>
 
-        <div class="tmm_member" style="border: 1px solid grey; border-top: orange solid 5px; ">
-          <div class="tmm_photo tmm_phover_trustees_0"
-            style="background: url('images/workforce/Faizal.jpg'); margin-left:auto; margin-right:auto; background-size:cover !important;">
-          </div>
-          <div class="tmm_textblock">
-            <div class="tmm_names"><span class="tmm_fname">Faizal</span> <span class="tmm_lname">K K</span></div>
-            <div class="tmm_job">Founder and Chief Designer</div>
-            <!-- <div class="tmm_desc" style="text-align:center">The Horlicks man of AWARE</div> -->
-            <div class="tmm_scblock"><a target="_blank" class="tmm_sociallink"
-                href="https://www.linkedin.com/in/faizalkk/" title="LinkedIn Profile"><img alt="LinkedIn Profile"
-                  src="images/socialmedia/linkedin.png" style="width: 32px; height: 32px;"></a></div>
-          </div>
-        </div>
+        <div class="people">
         <div class="tmm_member" style="border: 1px solid grey; border-top: orange solid 5px; ">
           <div class="tmm_photo tmm_phover_trustees_0"
             style="background: url('images/workforce/Faizal.jpg'); margin-left:auto; margin-right:auto; background-size:cover !important;">
@@ -116,7 +130,56 @@
           </div>
         </div>
 
+        <!-- <br><br><br><br><br><br><br> -->
 
+        <div class="tmm_member" style="border: 1px solid grey; border-top: orange solid 5px; ">
+          <div class="tmm_photo tmm_phover_trustees_1"
+            style="background: url('images/workforce/Naveen.jpeg'); margin-left:auto; margin-right:auto; background-size:cover !important;">
+          </div>
+          <div class="tmm_textblock">
+            <div class="tmm_names"><span class="tmm_fname">Naveen Kumar</span> <span class="tmm_lname">Devaraj</span></div>
+            <div class="tmm_job">Co-Founder and Chief Engineer</div>
+            <!-- <div class="tmm_desc" style="text-align:center">The Horlicks man of AWARE</div> -->
+            <div class="tmm_scblock"><a target="_blank" class="tmm_sociallink"
+                href="https://www.linkedin.com/in/naveendevaraj" title="LinkedIn Profile"><img alt="LinkedIn Profile"
+                  src="images/socialmedia/linkedin.png" style="width: 32px; height: 32px;"></a></div>
+          </div>
+        </div>
+
+        <!-- <br><br><br><br><br><br><br> -->
+
+        <div class="tmm_member" style="border: 1px solid grey; border-top: orange solid 5px; ">
+          <div class="tmm_photo tmm_phover_trustees_0"
+            style="background: url('images/workforce/Vinoth.jpg'); margin-left:auto; margin-right:auto; background-size:cover !important;">
+          </div>
+          <div class="tmm_textblock">
+            <div class="tmm_names"><span class="tmm_fname">Vinoth Raja</span> <span class="tmm_lname">R</span></div>
+            <div class="tmm_job">Co- Founder and Market Analyst</div>
+            <!-- <div class="tmm_desc" style="text-align:center">The Horlicks man of AWARE</div> -->
+            <div class="tmm_scblock"><a target="_blank" class="tmm_sociallink"
+                href="https://www.facebook.com/dudu.vino" title="Facebook Profile"><img alt="Facebook Profile"
+                  src="images/socialmedia/facebook_mini.png" style="width: 32px; height: 32px;"></a></div>
+          </div>
+        </div>
+
+        <br><br><br><br><br><br><br>
+
+        <div class="tmm_member" style="border: 1px solid grey; border-top: orange solid 5px; ">
+          <div class="tmm_photo tmm_phover_trustees_1"
+            style="background: url('images/workforce/Krishnan.jpg'); margin-left:auto; margin-right:auto; background-size:cover !important;">
+          </div>
+          <div class="tmm_textblock">
+            <div class="tmm_names"><span class="tmm_fname">Krishnan</span> <span class="tmm_lname">Ayyappan</span></div>
+            <div class="tmm_job">Chief IT Technician</div>
+            <!-- <div class="tmm_desc" style="text-align:center">The Horlicks man of AWARE</div> -->
+            <div class="tmm_scblock"><a target="_blank" class="tmm_sociallink"
+                href="https://www.linkedin.com/in/krishnanayyappan/" title="LinkedIn Profile"><img alt="LinkedIn Profile"
+                  src="images/socialmedia/linkedin.png" style="width: 32px; height: 32px;"></a></div>
+          </div>
+        </div>
+        </div>
+    </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>        
     <hr>
     <?php include 'footer.php';?>
 
